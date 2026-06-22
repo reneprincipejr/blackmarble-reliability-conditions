@@ -216,3 +216,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Environment
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data not tracked in Git
+data/raw/
+data/interim/
+*.tif
+*.tiff
+*.hdf
+*.h5
+*.nc
+*.zip
+
+# Logs and temporary files
+outputs/logs/
+tmp/
+scratch/
+
