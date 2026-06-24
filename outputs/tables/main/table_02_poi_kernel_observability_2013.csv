@@ -1,0 +1,10 @@
+Kernel,Class,Spatial Completeness SC (%),Temporal Completeness TC (%),Max Dropout (days)
+1×1,City Centers,31.1,31.1,14
+1×1,Municipal Centers,33.5,33.5,13
+1×1,Non-settlement Areas,26.7,26.7,27
+3×3,City Centers,28.9,30.3,14
+3×3,Municipal Centers,31.9,33.1,13
+3×3,Non-settlement Areas,24.9,26.4,26
+5×5,City Centers,26.5,28.9,14
+5×5,Municipal Centers,30.2,32.7,13
+5×5,Non-settlement Areas,24.2,26.2,27

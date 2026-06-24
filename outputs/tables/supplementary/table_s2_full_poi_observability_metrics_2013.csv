@@ -1,0 +1,16 @@
+,,Spatial (%),Spatial (%),Spatial (%),Temporal (%),Temporal (%),Temporal (%),Max Dropout Days,Max Dropout Days,Max Dropout Days
+extent,,1x1,3x3,5x5,1x1,3x3,5x5,1x1,3x3,5x5
+location,year,,,,,,,,,
+City Centers (average),2013,31.1,28.9,26.5,31.1,30.3,28.9,14,14,14
+Tacloban City Center,2013,32.6,30.8,28.7,32.6,31.8,29.9,11,11,13
+Ormoc City Center,2013,32.3,29.4,27.0,32.3,32.1,31.0,15,15,15
+Baybay City Center,2013,28.5,26.5,23.8,28.5,27.1,26.0,15,15,15
+Municipal Centers (average),2013,33.5,31.9,30.2,33.5,33.1,32.7,13,13,13
+Palo,2013,34.8,33.7,32.8,34.8,34.0,34.0,13,13,13
+Alang Alang,2013,35.3,33.6,32.7,35.3,35.6,34.5,11,11,11
+Guiuan,2013,30.4,28.3,24.9,30.4,29.6,29.6,15,15,15
+Non-settlement Areas (average),2013,26.7,24.9,24.2,26.7,26.4,26.2,27,26,27
+Samar Forest Reserve,2013,34.5,33.6,33.0,34.5,35.3,34.5,12,12,15
+Mt. Nacolod Upland,2013,35.6,32.8,32.0,35.6,35.1,35.3,16,13,13
+Central Leyte Forest,2013,23.6,21.8,21.1,23.6,23.3,23.3,18,18,18
+Southern Leyte Gulf,2013,13.2,11.4,10.9,13.2,11.8,11.5,61,62,62
