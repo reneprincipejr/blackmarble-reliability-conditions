@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reliability-Qualified Nighttime Lights Showcase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      line-height: 1.6;
+      color: #1f2933;
+      background: #ffffff;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      color: #111827;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 1.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: #4b5563;
+      margin-bottom: 2rem;
+    }
+
+    .key-message {
+      background: #f3f4f6;
+      border-left: 5px solid #111827;
+      padding: 1rem 1.25rem;
+      margin: 2rem 0;
+      font-size: 1.05rem;
+    }
+
+    .figure-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+      background: #fafafa;
+    }
+
+    .figure-card h3 {
+      margin-top: 0;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.55rem 0.85rem;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    a.button:hover {
+      background: #374151;
+    }
+
+    code {
+      background: #f3f4f6;
+      padding: 0.15rem 0.3rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Watching Disaster Recovery from Space</h1>
+
+  <p class="subtitle">
+    A general guide to interactive figures from a research workflow using
+    nighttime satellite observations to study disaster disruption and electricity recovery.
+  </p>
+
+  <div class="key-message">
+    <strong>Key message:</strong> Nighttime lights can support disaster recovery monitoring,
+    but only when the satellite observation is reliable enough to interpret.
+  </div>
+
+  <h2>What this project is about</h2>
+
+  <p>
+    Satellites can observe Earth at night. When electricity supply is disrupted after
+    a major storm, lights may dim. As power is restored, lights may return.
+    This makes nighttime lights a useful source of evidence for disaster impact
+    and recovery monitoring.
+  </p>
+
+  <p>
+    However, satellite observations are not always clear. In tropical regions,
+    clouds, storms, and atmospheric conditions often reduce how much of the ground
+    the satellite can observe. This project therefore asks:
+  </p>
+
+  <p>
+    <strong>When can nighttime lights be trusted as evidence of disaster impact and recovery?</strong>
+  </p>
+
+  <h2>How to read the figures</h2>
+
+  <h3>Direct nighttime light signal</h3>
+  <p>
+    The main signal used here is <strong>DNB-BRDF nighttime radiance</strong>
+    from NASA Black Marble. Lower radiance generally means less observed light.
+    A sharp drop after a disaster can indicate power interruption, damage,
+    evacuation, or reduced activity.
+  </p>
+
+  <h3>Gap-filled signal</h3>
+  <p>
+    Some products include a <strong>Gap-Filled</strong> layer. This can make the
+    time series look continuous, but it may carry forward information from previous
+    clear observations. A smooth line is therefore not always a reliable line.
+  </p>
+
+  <h3>Spatial completeness</h3>
+  <p>
+    <strong>Spatial completeness</strong> is the percentage of valid observed pixels
+    on a given day. High spatial completeness means the satellite had good usable
+    coverage. Low spatial completeness means much of the region was obscured or unusable.
+  </p>
+
+  <h3>Settlement classes</h3>
+  <p>
+    The analysis separates places by settlement type, from urban cores to rural
+    and non-settlement areas. Urban areas usually provide stronger and more stable
+    nighttime light signals, while rural or low-light areas can be harder to interpret.
+  </p>
+
+  <h2>Interactive figures</h2>
+
+  <div class="figure-card">
+    <h3>1. Interactive reliability filter for Samar–Leyte</h3>
+    <p>
+      This figure shows how the nighttime light signal changes when low-observability
+      days are filtered out. It helps explain why reliability screening is necessary
+      before interpreting daily satellite observations.
+    </p>
+    <p><strong>Look for:</strong> whether the signal changes when stricter spatial completeness thresholds are applied.</p>
+    <a class="button" href="figures/fig_sx_interactive_ntl_reliability_filter_samar_leyte.html">Open figure</a>
+  </div>
+
+  <div class="figure-card">
+    <h3>2. POI dashboard around Typhoon Haiyan</h3>
+    <p>
+      This dashboard compares selected urban, municipal, and non-settlement locations
+      around the Haiyan period.
+    </p>
+    <p><strong>Look for:</strong> which locations show clearer disruption and recovery signals, and which are noisier.</p>
+    <a class="button" href="figures/fig_sx_interactive_poi_dashboard_2013.html">Open dashboard</a>
+  </div>
+
+  <div class="figure-card">
+    <h3>3. Regional comparison by GHSL settlement group</h3>
+    <p>
+      This figure compares nighttime light dynamics across regions within the same
+      settlement category.
+    </p>
+    <p><strong>Look for:</strong> whether urban cores behave more consistently than rural or mixed classes.</p>
+    <a class="button" href="figures/fig_sx_region_comparison_by_ghsl_group.html">Open figure</a>
+  </div>
+
+  <div class="figure-card">
+    <h3>4. NGCP subgrid load dynamics</h3>
+    <p>
+      This figure shows electricity load dynamics across Visayas subgrids using
+      the 30-day moving average of 1 AM load.
+    </p>
+    <p><strong>Look for:</strong> major drops, recovery patterns, and differences between subgrids.</p>
+    <a class="button" href="figures/fig_sx_ngcp_subgrid_load_ma30_2012_2024.html">Open figure</a>
+  </div>
+
+  <div class="figure-card">
+    <h3>5. Samar–Leyte nighttime lights versus electricity load</h3>
+    <p>
+      This figure compares normalized nighttime lights with electricity load.
+      Strong co-movement suggests that nighttime lights are capturing real electricity-system dynamics.
+    </p>
+    <p><strong>Look for:</strong> whether the colored nighttime light curves move with the black electricity-load curve.</p>
+    <a class="button" href="figures/fig_sx_samar_leyte_zscore_alignment_tau10.html">Open figure</a>
+  </div>
+
+  <div class="figure-card">
+    <h3>6. Cross-subgrid transferability summary</h3>
+    <p>
+      This summary compares which settlement masks and spatial completeness thresholds
+      work best across different Visayas subgrids.
+    </p>
+    <p><strong>Look for:</strong> whether urban-focused masks are consistently selected across regions.</p>
+    <a class="button" href="figures/fig_sx_cross_subgrid_transferability_summary.html">Open figure</a>
+  </div>
+
+  <h2>What stakeholders can take from this</h2>
+
+  <p>
+    For disaster agencies, infrastructure planners, energy analysts, and resilience
+    researchers, the figures show both the promise and the caution of nighttime lights.
+  </p>
+
+  <p>
+    The promise is that satellite observations can provide an independent and spatially
+    consistent view of disaster disruption and recovery. The caution is that satellite
+    observations must first be screened for reliability, especially in cloudy tropical regions.
+  </p>
+
+  <p>
+    These figures should be used as a screening and interpretation layer, not as a
+    standalone source of truth. The strongest use case is to combine nighttime lights
+    with outage reports, electricity-load data, damage assessments, settlement maps,
+    and local knowledge.
+  </p>
+
+  <h2>Technical repository</h2>
+
+  <p>
+    This page is part of the reproducible research repository for reliability-qualified
+    nighttime lights analysis.
+  </p>
+
+</body>
+</html>
