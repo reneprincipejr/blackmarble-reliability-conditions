@@ -1,14 +1,11 @@
-# Datasets
+# Dataset Manifest
 
-Raw and intermediate datasets are not committed to this repository.
+This repository does not redistribute raw provider datasets. The workflow uses public or provider-managed datasets and exports derived analysis tables used in the manuscript.
 
-Place local input files here when reproducing the notebooks. Expected dataset paths are described in each notebook.
-
-This folder may include local copies or exports of:
-
-- NASA Black Marble VNP46A2 daily outputs
-- GHSL-SMOD settlement masks or derived statistics
-- NGCP hourly electricity load files
-- POI patch files and settlement-stratified daily statistics
-
-Large files, restricted files, and raw provider datasets should remain local and should not be committed to Git.
+| Dataset | Source | Use | Redistribution status |
+|---|---|---|---|
+| NASA Black Marble VNP46A2 | Google Earth Engine asset `NASA/VIIRS/002/VNP46A2` | Daily DNB-BRDF radiance, gap-filled comparison, quality flags, spatial completeness | Not redistributed; accessed through GEE |
+| GHSL SMOD R2023A | European Commission Joint Research Centre | Settlement stratification and cumulative GHSL thematic masks | Not redistributed; derived masks/statistics only |
+| NGCP hourly demand | National Grid Corporation of the Philippines Operations portal | Independent sub-grid electricity load reference | Original files not redistributed; derived alignment tables and metadata provided |
+| POI metadata | Author-generated | Pixel- and kernel-scale observability diagnostics | Included |
+| Derived output tables | Author-generated | Manuscript and supplementary figures/tables | Included in `outputs/tables/` |
