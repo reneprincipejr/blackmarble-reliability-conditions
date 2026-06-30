@@ -1,24 +1,27 @@
-
-## Step 8 — Add `CITATION.cff`
-
-Paste this starter version:
-
-```yaml
 cff-version: 1.2.0
-title: "Reliability Conditions for Interpreting Daily NASA Black Marble Nighttime Lights in Cloud-Impacted Tropical Regions"
-message: "If you use this repository, please cite the associated paper and archived repository release."
+
+message: "If you use this repository, please cite the archived Zenodo release."
 type: software
+title: "Reliability Conditions for Interpreting Daily NASA Black Marble Nighttime Lights in Cloud-Impacted Tropical Regions"
 authors:
-  - family-names: Principe
-    given-names: Rene Jr. L.
+  - family-names: "Principe"
+    given-names: "Rene L. Jr."
     orcid: "https://orcid.org/0009-0003-9585-1018"
-  - family-names: Reinke
-    given-names: Karin
+  - family-names: "Reinke"
+    given-names: "Karin"
     orcid: "https://orcid.org/0000-0003-4333-2315"
-  - family-names: Jones
-    given-names: Simon
+  - family-names: "Jones"
+    given-names: "Simon"
     orcid: "https://orcid.org/0000-0002-3914-3717"
 repository-code: "https://github.com/reneprincipejr/blackmarble-reliability-conditions"
-license: MIT
-version: "0.1.0"
-date-released: "2026-06-23"
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-06-30"
+keywords:
+  - "NASA Black Marble"
+  - "VIIRS"
+  - "nighttime lights"
+  - "spatial completeness"
+  - "observation gaps"
+  - "electricity load"
+  - "disaster recovery"
