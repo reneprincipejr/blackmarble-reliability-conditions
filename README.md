@@ -1,4 +1,5 @@
 # Reliability-Qualified Nighttime Lights for Disaster Impact and Recovery Analysis
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21051901.svg)](https://doi.org/10.5281/zenodo.21051901)
 
 This repository contains the reproducible analysis workflow for a journal paper evaluating when daily NASA Black Marble nighttime lights can be reliably interpreted as a proxy for post-disaster electricity disruption and recovery in cloud-impacted tropical regions.
 
@@ -151,4 +152,10 @@ The workflow therefore treats observability as a prerequisite for interpretation
 Code in this repository is released under the MIT License unless otherwise stated.
 
 Data remain subject to the terms and conditions of their original providers.
+
+## Citation
+
+If you use this repository, please cite:
+
+> Principe, R. L. Jr., Reinke, K., & Jones, S. (2026). *Black Marble Reliability Conditions: Reproducible Workflow for Reliability-Qualified Daily Nighttime Lights*. Zenodo. https://doi.org/10.5281/zenodo.21051901
 
