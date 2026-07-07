@@ -2,237 +2,529 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Reliability-Qualified Nighttime Lights Showcase</title>
+  <title>Watching Disaster Recovery from Space</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 48px 24px;
-      line-height: 1.6;
-      color: #1f2933;
-      background: #ffffff;
+    :root {
+      --ink: #111827;
+      --muted: #4b5563;
+      --soft: #f3f4f6;
+      --line: #e5e7eb;
+      --accent: #f59e0b;
+      --deep: #0f172a;
+      --blue: #2563eb;
+      --green: #047857;
     }
 
-    h1, h2, h3 {
-      line-height: 1.2;
-      color: #111827;
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 88vh;
+      display: grid;
+      align-items: center;
+      background:
+        linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.88)),
+        url("figures/fig_sx_vnp46a2_daily_panels_20131113.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 72px 24px;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #fde68a;
+      font-weight: 700;
+      font-size: 0.9rem;
     }
 
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
-    }
-
-    h2 {
-      margin-top: 2.5rem;
-      border-top: 1px solid #e5e7eb;
-      padding-top: 1.5rem;
+      font-size: clamp(2.4rem, 7vw, 5.8rem);
+      line-height: 0.95;
+      margin: 18px 0 22px;
+      max-width: 980px;
     }
 
     .subtitle {
-      font-size: 1.15rem;
-      color: #4b5563;
-      margin-bottom: 2rem;
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      max-width: 820px;
+      color: #e5e7eb;
     }
 
-    .key-message {
-      background: #f3f4f6;
-      border-left: 5px solid #111827;
-      padding: 1rem 1.25rem;
-      margin: 2rem 0;
+    .hero-grid {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      max-width: 920px;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.11);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 18px;
+      padding: 18px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-card strong {
+      display: block;
+      color: #ffffff;
       font-size: 1.05rem;
+      margin-bottom: 4px;
     }
 
-    .figure-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 1.25rem;
-      margin: 1.25rem 0;
-      background: #fafafa;
+    .hero-card span {
+      color: #d1d5db;
+      font-size: 0.95rem;
     }
 
-    .figure-card h3 {
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    section {
+      margin-bottom: 72px;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      line-height: 1.1;
+      margin: 0 0 18px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      line-height: 1.25;
       margin-top: 0;
     }
 
-    a.button {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.55rem 0.85rem;
-      background: #111827;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
+    .lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 880px;
     }
 
-    a.button:hover {
+    .callout {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-left: 7px solid var(--accent);
+      padding: 22px 24px;
+      border-radius: 16px;
+      margin: 28px 0;
+      font-size: 1.08rem;
+    }
+
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .concept {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .figure-story {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 34px 0 48px;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+      background: white;
+    }
+
+    .figure-text {
+      padding: 28px 32px 20px;
+    }
+
+    .figure-text p {
+      color: var(--muted);
+    }
+
+    .interpretation {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .interpretation div {
+      background: #f9fafb;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .interpretation strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 720px;
+      border: 0;
+      border-top: 1px solid var(--line);
+      background: white;
+    }
+
+    .small-frame {
+      height: 560px;
+    }
+
+    .full-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: white;
+      background: var(--deep);
+      padding: 10px 14px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .full-link:hover {
       background: #374151;
     }
 
-    code {
-      background: #f3f4f6;
-      padding: 0.15rem 0.3rem;
-      border-radius: 4px;
+    .image-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .image-strip img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    .ending {
+      background: var(--deep);
+      color: white;
+      border-radius: 26px;
+      padding: 36px;
+    }
+
+    .ending p {
+      color: #d1d5db;
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid,
+      .concept-grid,
+      .interpretation,
+      .image-strip {
+        grid-template-columns: 1fr;
+      }
+
+      iframe {
+        height: 560px;
+      }
+
+      header {
+        min-height: auto;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>Watching Disaster Recovery from Space</h1>
 
-  <p class="subtitle">
-    A general guide to interactive figures from a research workflow using
-    nighttime satellite observations to study disaster disruption and electricity recovery.
-  </p>
-
-  <div class="key-message">
-    <strong>Key message:</strong> Nighttime lights can support disaster recovery monitoring,
-    but only when the satellite observation is reliable enough to interpret.
-  </div>
-
-  <h2>What this project is about</h2>
-
-  <p>
-    Satellites can observe Earth at night. When electricity supply is disrupted after
-    a major storm, lights may dim. As power is restored, lights may return.
-    This makes nighttime lights a useful source of evidence for disaster impact
-    and recovery monitoring.
-  </p>
-
-  <p>
-    However, satellite observations are not always clear. In tropical regions,
-    clouds, storms, and atmospheric conditions often reduce how much of the ground
-    the satellite can observe. This project therefore asks:
-  </p>
-
-  <p>
-    <strong>When can nighttime lights be trusted as evidence of disaster impact and recovery?</strong>
-  </p>
-
-  <h2>How to read the figures</h2>
-
-  <h3>Direct nighttime light signal</h3>
-  <p>
-    The main signal used here is <strong>DNB-BRDF nighttime radiance</strong>
-    from NASA Black Marble. Lower radiance generally means less observed light.
-    A sharp drop after a disaster can indicate power interruption, damage,
-    evacuation, or reduced activity.
-  </p>
-
-  <h3>Gap-filled signal</h3>
-  <p>
-    Some products include a <strong>Gap-Filled</strong> layer. This can make the
-    time series look continuous, but it may carry forward information from previous
-    clear observations. A smooth line is therefore not always a reliable line.
-  </p>
-
-  <h3>Spatial completeness</h3>
-  <p>
-    <strong>Spatial completeness</strong> is the percentage of valid observed pixels
-    on a given day. High spatial completeness means the satellite had good usable
-    coverage. Low spatial completeness means much of the region was obscured or unusable.
-  </p>
-
-  <h3>Settlement classes</h3>
-  <p>
-    The analysis separates places by settlement type, from urban cores to rural
-    and non-settlement areas. Urban areas usually provide stronger and more stable
-    nighttime light signals, while rural or low-light areas can be harder to interpret.
-  </p>
-
-  <h2>Interactive figures</h2>
-
-  <div class="figure-card">
-    <h3>1. Interactive reliability filter for Samar–Leyte</h3>
-    <p>
-      This figure shows how the nighttime light signal changes when low-observability
-      days are filtered out. It helps explain why reliability screening is necessary
-      before interpreting daily satellite observations.
+<header>
+  <div class="hero">
+    <div class="eyebrow">Satellite evidence for disaster recovery</div>
+    <h1>Watching disaster recovery from space</h1>
+    <p class="subtitle">
+      Interactive figures from a research workflow testing when nighttime satellite lights
+      can be trusted as evidence of electricity disruption and recovery after major storms.
     </p>
-    <p><strong>Look for:</strong> whether the signal changes when stricter spatial completeness thresholds are applied.</p>
-    <a class="button" href="figures/fig_sx_interactive_ntl_reliability_filter_samar_leyte.html">Open figure</a>
-  </div>
 
-  <div class="figure-card">
-    <h3>2. POI dashboard around Typhoon Haiyan</h3>
-    <p>
-      This dashboard compares selected urban, municipal, and non-settlement locations
-      around the Haiyan period.
-    </p>
-    <p><strong>Look for:</strong> which locations show clearer disruption and recovery signals, and which are noisier.</p>
-    <a class="button" href="figures/fig_sx_interactive_poi_dashboard_2013.html">Open dashboard</a>
+    <div class="hero-grid">
+      <div class="hero-card">
+        <strong>Problem</strong>
+        <span>Clouds and data gaps can make daily nighttime lights misleading.</span>
+      </div>
+      <div class="hero-card">
+        <strong>Approach</strong>
+        <span>Screen the satellite record before interpreting disaster signals.</span>
+      </div>
+      <div class="hero-card">
+        <strong>Use case</strong>
+        <span>Support recovery monitoring where ground information is delayed or fragmented.</span>
+      </div>
+    </div>
   </div>
+</header>
 
-  <div class="figure-card">
-    <h3>3. Regional comparison by GHSL settlement group</h3>
-    <p>
-      This figure compares nighttime light dynamics across regions within the same
-      settlement category.
-    </p>
-    <p><strong>Look for:</strong> whether urban cores behave more consistently than rural or mixed classes.</p>
-    <a class="button" href="figures/fig_sx_region_comparison_by_ghsl_group.html">Open figure</a>
+<main>
+
+<section>
+  <h2>The story in one sentence</h2>
+  <p class="lead">
+    Nighttime lights can reveal disruption and recovery after disasters, but only when the
+    satellite actually observed enough valid pixels to make the signal trustworthy.
+  </p>
+
+  <div class="callout">
+    <strong>Key takeaway:</strong>
+    A smooth satellite time series is not automatically reliable. In tropical disaster settings,
+    observability must be checked before nighttime lights are interpreted as evidence of power recovery.
   </div>
+</section>
 
-  <div class="figure-card">
-    <h3>4. NGCP subgrid load dynamics</h3>
-    <p>
-      This figure shows electricity load dynamics across Visayas subgrids using
-      the 30-day moving average of 1 AM load.
-    </p>
-    <p><strong>Look for:</strong> major drops, recovery patterns, and differences between subgrids.</p>
-    <a class="button" href="figures/fig_sx_ngcp_subgrid_load_ma30_2012_2024.html">Open figure</a>
+<section>
+  <h2>How to read the evidence</h2>
+  <p class="lead">
+    The figures below are interactive. You can zoom, pan, hover, and open each figure in a larger view.
+    Read them as evidence layers, not as a single definitive answer.
+  </p>
+
+  <div class="concept-grid">
+    <div class="concept">
+      <h3>Direct light signal</h3>
+      <p>
+        DNB-BRDF radiance is the directly observed nightlight signal. A drop may indicate
+        outage, damage, evacuation, or reduced activity.
+      </p>
+    </div>
+
+    <div class="concept">
+      <h3>Gap-filled signal</h3>
+      <p>
+        Gap-filled radiance can look continuous because it may use previous observations.
+        It is useful context, but not always fresh evidence.
+      </p>
+    </div>
+
+    <div class="concept">
+      <h3>Spatial completeness</h3>
+      <p>
+        Spatial completeness measures how much of the area was validly observed.
+        Low completeness means the signal should be treated cautiously.
+      </p>
+    </div>
   </div>
+</section>
 
-  <div class="figure-card">
-    <h3>5. Samar–Leyte nighttime lights versus electricity load</h3>
-    <p>
-      This figure compares normalized nighttime lights with electricity load.
-      Strong co-movement suggests that nighttime lights are capturing real electricity-system dynamics.
-    </p>
-    <p><strong>Look for:</strong> whether the colored nighttime light curves move with the black electricity-load curve.</p>
-    <a class="button" href="figures/fig_sx_samar_leyte_zscore_alignment_tau10.html">Open figure</a>
+<section>
+  <h2>Visual evidence from the satellite record</h2>
+  <p class="lead">
+    These daily panels show how direct radiance, gap-filled radiance, and quality flags can tell
+    different stories during a disaster period.
+  </p>
+
+  <div class="image-strip">
+    <img src="figures/fig_sx_vnp46a2_daily_panels_20131111.png" alt="VNP46A2 daily panel for 2013-11-11">
+    <img src="figures/fig_sx_vnp46a2_daily_panels_20131113.png" alt="VNP46A2 daily panel for 2013-11-13">
+    <img src="figures/fig_sx_vnp46a2_daily_panels_20131116.png" alt="VNP46A2 daily panel for 2013-11-16">
   </div>
+</section>
 
-  <div class="figure-card">
-    <h3>6. Cross-subgrid transferability summary</h3>
-    <p>
-      This summary compares which settlement masks and spatial completeness thresholds
-      work best across different Visayas subgrids.
-    </p>
-    <p><strong>Look for:</strong> whether urban-focused masks are consistently selected across regions.</p>
-    <a class="button" href="figures/fig_sx_cross_subgrid_transferability_summary.html">Open figure</a>
-  </div>
+<section>
+  <h2>Interactive reliability diagnostics</h2>
 
+  <article class="figure-story">
+    <div class="figure-text">
+      <h3>1. Reliability filter for Samar–Leyte</h3>
+      <p>
+        This figure shows how the nighttime light signal changes when days with poor spatial
+        completeness are filtered out. It is the clearest way to show why reliability screening matters.
+      </p>
+
+      <div class="interpretation">
+        <div>
+          <strong>What to look for</strong>
+          Check whether the signal changes when stricter valid-pixel thresholds are applied.
+        </div>
+        <div>
+          <strong>Why it matters</strong>
+          A disaster signal should not be interpreted if it is mostly driven by missing or poor-quality observations.
+        </div>
+      </div>
+
+      <a class="full-link" href="figures/fig_sx_interactive_ntl_reliability_filter_samar_leyte.html" target="_blank">Open full screen</a>
+    </div>
+
+    <iframe src="figures/fig_sx_interactive_ntl_reliability_filter_samar_leyte.html"></iframe>
+  </article>
+
+  <article class="figure-story">
+    <div class="figure-text">
+      <h3>2. POI dashboard around Typhoon Haiyan</h3>
+      <p>
+        This dashboard compares urban centers, municipal centers, and non-settlement areas.
+        It shows that location and settlement type strongly affect how interpretable the signal is.
+      </p>
+
+      <div class="interpretation">
+        <div>
+          <strong>What to look for</strong>
+          Urban areas should generally show clearer and more stable signals than dark or rural areas.
+        </div>
+        <div>
+          <strong>Why it matters</strong>
+          The same satellite product can be useful in one place and noisy in another.
+        </div>
+      </div>
+
+      <a class="full-link" href="figures/fig_sx_interactive_poi_dashboard_2013.html" target="_blank">Open full screen</a>
+    </div>
+
+    <iframe src="figures/fig_sx_interactive_poi_dashboard_2013.html"></iframe>
+  </article>
+</section>
+
+<section>
+  <h2>From satellite lights to electricity recovery</h2>
+
+  <article class="figure-story">
+    <div class="figure-text">
+      <h3>3. NGCP subgrid electricity load</h3>
+      <p>
+        Electricity load provides an independent ground-based reference. This figure shows
+        subgrid-level load dynamics across the Visayas.
+      </p>
+
+      <div class="interpretation">
+        <div>
+          <strong>What to look for</strong>
+          Compare the timing of drops and recovery across subgrids.
+        </div>
+        <div>
+          <strong>Why it matters</strong>
+          If nighttime lights track electricity load, they can provide spatial context to power-system recovery.
+        </div>
+      </div>
+
+      <a class="full-link" href="figures/fig_sx_ngcp_subgrid_load_ma30_2012_2024.html" target="_blank">Open full screen</a>
+    </div>
+
+    <iframe class="small-frame" src="figures/fig_sx_ngcp_subgrid_load_ma30_2012_2024.html"></iframe>
+  </article>
+
+  <article class="figure-story">
+    <div class="figure-text">
+      <h3>4. Samar–Leyte nighttime lights versus electricity load</h3>
+      <p>
+        This figure compares normalized nighttime lights with electricity load. Strong co-movement
+        suggests that the satellite signal is capturing real electricity-system dynamics.
+      </p>
+
+      <div class="interpretation">
+        <div>
+          <strong>What to look for</strong>
+          The colored nighttime-light curves should move with the black electricity-load curve.
+        </div>
+        <div>
+          <strong>Why it matters</strong>
+          Alignment is strongest when the signal is drawn from reliable observations and appropriate settlement masks.
+        </div>
+      </div>
+
+      <a class="full-link" href="figures/fig_sx_samar_leyte_zscore_alignment_tau10.html" target="_blank">Open full screen</a>
+    </div>
+
+    <iframe src="figures/fig_sx_samar_leyte_zscore_alignment_tau10.html"></iframe>
+  </article>
+</section>
+
+<section>
+  <h2>Can the method transfer across regions?</h2>
+
+  <article class="figure-story">
+    <div class="figure-text">
+      <h3>5. Cross-subgrid transferability summary</h3>
+      <p>
+        This summary tests whether the same reliability-qualified approach works across
+        Bohol, Cebu, Negros, Panay, and Samar–Leyte.
+      </p>
+
+      <div class="interpretation">
+        <div>
+          <strong>What to look for</strong>
+          Urban-focused masks are often selected, but the best spatial completeness threshold varies by subgrid.
+        </div>
+        <div>
+          <strong>Why it matters</strong>
+          The method is transferable, but not as a one-size-fits-all threshold.
+        </div>
+      </div>
+
+      <a class="full-link" href="figures/fig_sx_cross_subgrid_transferability_summary.html" target="_blank">Open full screen</a>
+    </div>
+
+    <iframe class="small-frame" src="figures/fig_sx_cross_subgrid_transferability_summary.html"></iframe>
+  </article>
+
+  <article class="figure-story">
+    <div class="figure-text">
+      <h3>6. Regional comparison by settlement group</h3>
+      <p>
+        This figure compares nighttime light dynamics across regions within the same settlement hierarchy.
+      </p>
+
+      <div class="interpretation">
+        <div>
+          <strong>What to look for</strong>
+          Urban cores should generally show stronger and more stable co-movement than rural groups.
+        </div>
+        <div>
+          <strong>Why it matters</strong>
+          Settlement structure controls how much of the electricity recovery signal is visible from space.
+        </div>
+      </div>
+
+      <a class="full-link" href="figures/fig_sx_region_comparison_by_ghsl_group.html" target="_blank">Open full screen</a>
+    </div>
+
+    <iframe src="figures/fig_sx_region_comparison_by_ghsl_group.html"></iframe>
+  </article>
+</section>
+
+<section class="ending">
   <h2>What stakeholders can take from this</h2>
-
   <p>
-    For disaster agencies, infrastructure planners, energy analysts, and resilience
-    researchers, the figures show both the promise and the caution of nighttime lights.
+    For disaster agencies, infrastructure planners, energy analysts, and resilience researchers,
+    this work provides both a caution and an opportunity.
   </p>
-
   <p>
-    The promise is that satellite observations can provide an independent and spatially
-    consistent view of disaster disruption and recovery. The caution is that satellite
-    observations must first be screened for reliability, especially in cloudy tropical regions.
+    The caution is that nighttime lights should not be interpreted blindly. Cloud cover,
+    data gaps, and low-light conditions can produce misleading signals.
   </p>
-
   <p>
-    These figures should be used as a screening and interpretation layer, not as a
-    standalone source of truth. The strongest use case is to combine nighttime lights
-    with outage reports, electricity-load data, damage assessments, settlement maps,
-    and local knowledge.
+    The opportunity is that, with reliability screening, nighttime lights can become an
+    independent layer of evidence for identifying where disruption and recovery may be visible from space.
   </p>
+</section>
 
-  <h2>Technical repository</h2>
-
-  <p>
-    This page is part of the reproducible research repository for reliability-qualified
-    nighttime lights analysis.
-  </p>
+</main>
 
 </body>
 </html>

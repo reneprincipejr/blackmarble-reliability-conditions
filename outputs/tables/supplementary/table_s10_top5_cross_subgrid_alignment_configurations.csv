@@ -1,0 +1,26 @@
+Sub-grid,Rank,Thematic Mask,GHSL Range,τ (%),Composite Score,r,RMSE,N days,Temporal Coverage (%)
+Bohol,1,G1: Urban Core,30,20,0.881,0.86,0.53,1363,28.81
+Bohol,2,G1: Urban Core,30,10,0.875,0.85,0.55,1487,31.43
+Bohol,3,G1: Urban Core,30,30,0.862,0.86,0.53,1264,26.72
+Bohol,4,G2: Dense Urban,23-30,20,0.861,0.84,0.57,1543,32.61
+Bohol,5,G3: Core & Inner,22-30,30,0.86,0.84,0.56,1446,30.56
+Cebu,1,G1: Urban Core,30,60,0.724,0.78,0.67,1015,21.45
+Cebu,2,G1: Urban Core,30,50,0.717,0.77,0.68,1119,23.65
+Cebu,3,G1: Urban Core,30,30,0.708,0.75,0.7,1307,27.63
+Cebu,4,G3: Core & Inner,22-30,90,0.7,0.82,0.6,202,4.27
+Cebu,5,G1: Urban Core,30,40,0.698,0.75,0.7,1211,25.6
+Negros,1,G1: Urban Core,30,10,0.897,0.79,0.65,1837,38.83
+Negros,2,G2: Dense Urban,23-30,10,0.883,0.72,0.74,2040,43.12
+Negros,3,G1: Urban Core,30,20,0.867,0.79,0.64,1597,33.76
+Negros,4,G3: Core & Inner,22-30,10,0.863,0.68,0.79,2081,43.99
+Negros,5,G2: Dense Urban,23-30,20,0.858,0.76,0.7,1716,36.27
+Panay,1,G2: Dense Urban,23-30,10,0.889,0.8,0.64,2084,44.05
+Panay,2,G2: Dense Urban,23-30,20,0.877,0.84,0.56,1771,37.43
+Panay,3,G3: Core & Inner,22-30,10,0.873,0.77,0.68,2112,44.64
+Panay,4,G3: Core & Inner,22-30,20,0.865,0.82,0.61,1820,38.47
+Panay,5,G2: Dense Urban,23-30,30,0.853,0.85,0.54,1543,32.61
+Samar-Leyte,1,G2: Dense Urban,23-30,10,0.938,0.84,0.57,2365,49.99
+Samar-Leyte,2,G1: Urban Core,30,10,0.934,0.85,0.54,2212,46.76
+Samar-Leyte,3,G3: Core & Inner,22-30,10,0.923,0.82,0.6,2386,50.43
+Samar-Leyte,4,G2: Dense Urban,23-30,20,0.908,0.85,0.55,2035,43.01
+Samar-Leyte,5,G1: Urban Core,30,20,0.907,0.86,0.52,1938,40.96

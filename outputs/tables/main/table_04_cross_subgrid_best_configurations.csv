@@ -1,0 +1,6 @@
+Sub-grid,Thematic Mask,GHSL Range,τ (%),Composite Score,r,RMSE,N days,Temporal Coverage (%)
+Samar-Leyte,G2: Dense Urban,23-30,10,0.938,0.84,0.57,2365,49.99
+Bohol,G1: Urban Core,30,20,0.881,0.86,0.53,1363,28.81
+Cebu,G1: Urban Core,30,60,0.724,0.78,0.67,1015,21.45
+Negros,G1: Urban Core,30,10,0.897,0.79,0.65,1837,38.83
+Panay,G2: Dense Urban,23-30,10,0.889,0.8,0.64,2084,44.05
