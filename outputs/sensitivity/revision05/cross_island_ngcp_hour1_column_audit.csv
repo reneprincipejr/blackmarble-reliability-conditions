@@ -1,0 +1,6 @@
+region,sheet,hour_column,excel_header_row,selection_method,n_load_dates
+Panay,PANAY HOURLY LOAD 2013-2024,1,2,explicit Hour 1 label,4383
+Negros,NEGROS HOURLY LOAD 2013-2024,1,3,explicit Hour 1 label,4383
+Samar-Leyte,LEY-SAM HOURLY LOAD 2013-2024,1,3,explicit Hour 1 label,4383
+Cebu,CEBU HOURLY LOAD 2013-2024,1,3,explicit Hour 1 label,4383
+Bohol,BOHOL LOAD 2013-2024,1,3,explicit Hour 1 label,4383

@@ -1,0 +1,1 @@
+No same-mask daily gap-filled CSVs found. Regional/POI gap-filled products in Notebooks 00–01 have a different spatial support and cannot support a like-for-like GHSL-mask load comparison.

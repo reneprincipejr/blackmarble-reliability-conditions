@@ -1,0 +1,41 @@
+{
+  "title": "Reliability Conditions for Interpreting Daily NASA Black Marble Nighttime Lights in Cloud-Impacted Tropical Regions",
+  "upload_type": "software",
+  "description": "Reproducible code, notebooks, Google Earth Engine scripts, and processed outputs supporting the manuscript on reliability-qualified NASA Black Marble nighttime lights for electricity-load alignment in cloud-impacted tropical regions.",
+  "creators": [
+    {
+      "name": "Principe, Rene L. Jr.",
+      "orcid": "0009-0003-9585-1018",
+      "affiliation": "RMIT University"
+    },
+    {
+      "name": "Reinke, Karin",
+      "orcid": "0000-0003-4333-2315",
+      "affiliation": "RMIT University"
+    },
+    {
+      "name": "Jones, Simon",
+      "orcid": "0000-0002-3914-3717",
+      "affiliation": "RMIT University"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "NASA Black Marble",
+    "VIIRS",
+    "nighttime lights",
+    "spatial completeness",
+    "temporal completeness",
+    "observation gaps",
+    "electricity load",
+    "disaster recovery",
+    "cloud-impacted tropical regions"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/reneprincipejr/blackmarble-reliability-conditions",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
