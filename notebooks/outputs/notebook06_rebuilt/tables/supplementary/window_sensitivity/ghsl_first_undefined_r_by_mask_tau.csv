@@ -1,0 +1,15 @@
+tau,mask,window_days,n_pairs,r_status
+50,G1,19,2,fewer than 3 paired dates
+50,G2,21,2,fewer than 3 paired dates
+50,G3,21,2,fewer than 3 paired dates
+50,G4,24,2,fewer than 3 paired dates
+50,G5,24,2,fewer than 3 paired dates
+50,G6,24,2,fewer than 3 paired dates
+75,G1,18,2,fewer than 3 paired dates
+75,G2,7,2,fewer than 3 paired dates
+75,G3,8,1,fewer than 3 paired dates
+75,G4,18,2,fewer than 3 paired dates
+75,G5,18,2,fewer than 3 paired dates
+75,G6,19,2,fewer than 3 paired dates
+75,G7,15,2,fewer than 3 paired dates
+75,G8,15,2,fewer than 3 paired dates
