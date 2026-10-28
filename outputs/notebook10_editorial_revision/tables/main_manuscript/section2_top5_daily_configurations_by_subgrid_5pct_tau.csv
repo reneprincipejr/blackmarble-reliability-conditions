@@ -1,0 +1,26 @@
+Sub-grid,Rank,GHSL mask,Mask description,SC τ (%),Pearson r,N (%),Paired days,Composite score
+Samar-Leyte,1,G1,Urban Core,25,0.602,44.2,1936,0.16
+Samar-Leyte,2,G1,Urban Core,30,0.615,41.6,1823,0.1575
+Samar-Leyte,3,G1,Urban Core,20,0.579,46.9,2057,0.1572
+Samar-Leyte,4,G1,Urban Core,15,0.559,50.0,2191,0.156
+Samar-Leyte,5,G1,Urban Core,40,0.65,36.6,1605,0.1546
+Bohol,1,G1,Urban Core,40,0.66,29.1,1275,0.1267
+Bohol,2,G1,Urban Core,35,0.649,29.8,1307,0.1256
+Bohol,3,G1,Urban Core,45,0.664,28.4,1244,0.1252
+Bohol,4,G1,Urban Core,50,0.665,27.6,1210,0.1221
+Bohol,5,G1,Urban Core,30,0.628,30.6,1342,0.1207
+Cebu,1,G1,Urban Core,50,0.435,27.7,1216,0.0525
+Cebu,2,G1,Urban Core,30,0.398,32.3,1415,0.0511
+Cebu,3,G1,Urban Core,60,0.448,25.1,1098,0.0503
+Cebu,4,G1,Urban Core,55,0.436,26.5,1161,0.0503
+Cebu,5,G1,Urban Core,45,0.418,28.7,1260,0.0501
+Negros,1,G1,Urban Core,15,0.424,41.8,1834,0.0753
+Negros,2,G1,Urban Core,20,0.433,39.1,1712,0.0733
+Negros,3,G1,Urban Core,10,0.405,44.6,1957,0.0732
+Negros,4,G1,Urban Core,30,0.466,33.6,1472,0.073
+Negros,5,G1,Urban Core,5,0.379,49.5,2170,0.071
+Panay,1,G4,Urban Fringe,5,0.406,56.9,2495,0.094
+Panay,2,G2,Dense Urban,45,0.559,30.0,1315,0.0937
+Panay,3,G4,Urban Fringe,10,0.426,51.7,2266,0.0937
+Panay,4,G4,Urban Fringe,15,0.434,48.3,2119,0.0911
+Panay,5,G2,Dense Urban,50,0.572,27.8,1217,0.0908

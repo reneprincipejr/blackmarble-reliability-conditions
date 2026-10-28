@@ -1,0 +1,26 @@
+Sub-grid,Mask rank,GHSL mask,Mask description,Best SC τ (%),Pearson r,N (%),Paired days,Composite score
+Samar-Leyte,1,G1,Urban Core,25,0.602,44.2,1936,0.16
+Samar-Leyte,2,G2,Dense Urban,15,0.522,53.4,2340,0.1453
+Samar-Leyte,3,G3,Core & Inner,15,0.497,53.7,2354,0.1327
+Samar-Leyte,4,G4,Urban Fringe,5,0.388,64.6,2833,0.0973
+Samar-Leyte,5,G5,Built-Up / Rural Mix,5,0.35,65.4,2865,0.0802
+Bohol,1,G1,Urban Core,40,0.66,29.1,1275,0.1267
+Bohol,2,G2,Dense Urban,45,0.642,27.7,1216,0.1142
+Bohol,3,G3,Core & Inner,40,0.595,31.0,1360,0.1098
+Bohol,4,G4,Urban Fringe,5,0.44,53.1,2328,0.103
+Bohol,5,G5,Built-Up / Rural Mix,5,0.428,53.2,2331,0.0972
+Cebu,1,G1,Urban Core,50,0.435,27.7,1216,0.0525
+Cebu,2,G2,Dense Urban,60,0.454,22.6,992,0.0466
+Cebu,3,G3,Core & Inner,65,0.462,20.7,908,0.0442
+Cebu,4,G4,Urban Fringe,55,0.4,26.6,1165,0.0426
+Cebu,5,G5,Built-Up / Rural Mix,55,0.39,26.6,1168,0.0406
+Negros,1,G1,Urban Core,15,0.424,41.8,1834,0.0753
+Negros,2,G4,Urban Fringe,5,0.337,57.7,2530,0.0655
+Negros,3,G2,Dense Urban,10,0.362,49.2,2158,0.0644
+Negros,4,G5,Built-Up / Rural Mix,10,0.34,52.4,2297,0.0605
+Negros,5,G3,Core & Inner,15,0.358,46.0,2016,0.059
+Panay,1,G4,Urban Fringe,5,0.406,56.9,2495,0.094
+Panay,2,G2,Dense Urban,45,0.559,30.0,1315,0.0937
+Panay,3,G5,Built-Up / Rural Mix,5,0.399,57.0,2499,0.0907
+Panay,4,G3,Core & Inner,50,0.554,28.4,1243,0.0872
+Panay,5,G1,Urban Core,55,0.557,26.5,1162,0.0822
