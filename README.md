@@ -1,7 +1,8 @@
 # Reliability-Qualified Nighttime Lights for Disaster Recovery Monitoring
 
-<<<<<<< HEAD
 **A reproducible workflow for testing when daily NASA Black Marble nighttime lights can be trusted as evidence of disaster disruption and electricity recovery in cloud-impacted tropical regions.**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21051901.svg)](https://doi.org/10.5281/zenodo.21051901)
 
 [![GitHub Pages](https://img.shields.io/badge/Interactive%20Showcase-GitHub%20Pages-blue)](https://reneprincipejr.github.io/blackmarble-reliability-conditions/)
 [![NASA Black Marble](https://img.shields.io/badge/Data-NASA%20Black%20Marble-black)](https://blackmarble.gsfc.nasa.gov/)
@@ -49,7 +50,7 @@ The workflow has three gates:
 
 ---
 
-## Key contribution
+## Key takeaways
 
 Most nighttime-light disaster studies ask whether light changed after a disaster. This workflow asks a prior question:
 
@@ -57,11 +58,11 @@ Most nighttime-light disaster studies ask whether light changed after a disaster
 
 The repository demonstrates that daily nighttime lights can support post-disaster electricity recovery analysis, but only under reliability-qualified conditions. In particular:
 
-- direct DNB-BRDF observations should be separated from gap-filled continuity;
-- valid-pixel availability must be quantified before interpreting daily signals;
-- urban-focused settlement masks generally provide stronger NTL–load alignment;
-- stricter spatial-completeness thresholds can improve reliability but reduce temporal coverage;
-- optimal thresholds vary by subgrid, so reliability settings should be transferable but not fixed universally.
+- **A continuous record is not necessarily a fresh observation.** Direct DNB-BRDF observations should be distinguished from gap-filled values that may reflect earlier dates.
+- **Check what the satellite could actually see.** Valid-pixel availability and observation gaps must be measured before interpreting changes in nighttime lights.
+- **Settlement type matters.** Urban-focused masks generally show stronger agreement with electricity-load records than broader masks containing less consistently lit areas.
+- **Stricter screening has a cost.** Requiring more valid pixels can improve alignment while leaving fewer usable dates. Agreement and temporal coverage must be considered together.
+- **Regional settings need regional checks.** The strongest-performing thresholds vary across subgrids; a configuration selected for Samar–Leyte should be evaluated before use elsewhere.
 
 ---
 
@@ -78,79 +79,11 @@ The core study region is **Samar–Leyte / Eastern Visayas, Philippines**, with 
 The disaster context includes major tropical cyclone events, especially **Typhoon Haiyan / Yolanda**, which made landfall on **8 November 2013**.
 
 ---
-=======
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21051901.svg)](https://doi.org/10.5281/zenodo.21051901)
-
-This repository contains the reproducible workflow for evaluating when daily NASA Black Marble nighttime lights can be reliably interpreted as evidence of post-disaster electricity disruption and recovery in cloud-impacted tropical regions.
-
-The study focuses on Samar–Leyte and selected Visayas subgrids in the Philippines, combining daily VIIRS Black Marble VNP46A2 nighttime lights, GHSL settlement classes, and NGCP electricity-load data.
-
-<img width="1440" height="1525" alt="Reliability-qualified nighttime lights schematic" src="https://github.com/user-attachments/assets/a5525ebc-3304-4765-b348-cec6f26fc1e4" />
-
-## Why this matters
-
-Nighttime satellite images can help show how disasters affect communities. When electricity supply is disrupted after a major storm, lights may dim. As power is restored, lights may return. This makes nighttime lights a promising source of evidence for disaster impact and recovery monitoring.
-
-But there is a major limitation: in tropical regions, the satellite does not always see the ground clearly. Clouds, storms, and atmospheric conditions can interrupt direct observations. Some products may also appear continuous because missing observations are gap-filled.
-
-This repository addresses that problem by asking:
-
-> **When can daily nighttime lights be trusted as evidence of disaster impact and electricity recovery?**
-
-The answer is a **reliability-qualified workflow**. Before interpreting nighttime lights, the workflow first checks whether enough valid satellite observations exist to support interpretation.
-
-## Main idea
-
-This workflow treats **observability as a prerequisite**, not an afterthought.
-
-Instead of assuming that every daily nighttime light value is meaningful, the analysis evaluates:
-
-* how much of the region was validly observed,
-* how long observation gaps persisted,
-* how stable the signal is across pixels and settlement types,
-* how direct DNB-BRDF observations compare with Gap-Filled radiance,
-* and whether reliability-screened nighttime lights align with independent electricity-load data.
-
-The goal is not to replace ground-based information. The goal is to provide an independent, spatially consistent layer of evidence that can support disaster recovery monitoring when field reports, outage data, or administrative information are delayed or fragmented.
-
-## Interactive showcase
-
-A public-facing guide to selected interactive figures is available here:
-
-**https://reneprincipejr.github.io/blackmarble-reliability-conditions/**
-
-The showcase is written for general stakeholders, including disaster agencies, infrastructure planners, energy analysts, and resilience researchers. It explains how to read the figures, what spatial completeness means, and why nighttime lights should be interpreted only after checking observation reliability.
-
-## What is included
-
-This repository includes:
-
-* reproducible Jupyter notebooks,
-* Google Earth Engine scripts for generating satellite-derived inputs,
-* Python scripts for POI patch preparation,
-* manuscript-ready figures and tables,
-* interactive HTML figures,
-* documentation for datasets, workflow, notebooks, and reproducibility.
-
-Raw satellite, settlement, and electricity-load datasets are not redistributed. The repository documents the expected local data structure and provides scripts to regenerate derived inputs where possible.
-
-## Notebook workflow
-
-| Notebook                                            | Purpose                                                                                                                |
-| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `00_vnp46a2_visual_diagnostics.ipynb`               | Inspects daily VNP46A2 DNB-BRDF radiance, Gap-Filled radiance, quality flags, retrieval age, and spatial completeness. |
-| `01_poi_observability_diagnostics.ipynb`            | Evaluates local observability across selected points of interest using 1×1, 3×3, and 5×5 pixel supports.               |
-| `02_settlement_observability_diagnostics.ipynb`     | Evaluates observability across GHSL-SMOD settlement classes.                                                           |
-| `03_reliability_qualified_ntl_load_alignment.ipynb` | Tests whether reliability-qualified nighttime lights align with NGCP electricity load for Samar–Leyte.                 |
-| `04_cross_subgrid_transferability.ipynb`            | Tests whether reliability conditions transfer across Bohol, Cebu, Negros, Panay, and Samar–Leyte.                      |
-
->>>>>>> 4594814378d1936e079f6e3522f638ffcec9f438
 
 ## Repository structure
 
 ```text
 .
-<<<<<<< HEAD
 ├── docs/
 │   ├── index.html
 │   ├── assets/
@@ -171,22 +104,31 @@ Raw satellite, settlement, and electricity-load datasets are not redistributed. 
 │   └── 01_compile_poi_patches_to_csv.py
 │
 ├── notebooks/
-│   ├── 00_vnp46a2_visual_diagnostics.ipynb
-│   ├── 01_poi_observability_diagnostics.ipynb
-│   ├── 02_settlement_observability_diagnostics.ipynb
-│   ├── 03_reliability_qualified_ntl_load_alignment.ipynb
-│   └── 04_cross_subgrid_transferability.ipynb
+│   ├── 10_vnp46a2_visual_diagnostics.ipynb
+│   ├── 11_poi_observability_diagnostics.ipynb
+│   ├── 12_settlement_observability_diagnostics.ipynb
+│   ├── 13_reliability_qualified_ntl_load_alignment.ipynb
+│   ├── 14_cross_subgrid_transferability.ipynb
+│   ├── 15_editorial_revision_sensitivity.ipynb
+│   └── 99_figure_and_table_export_audit.ipynb
 │
 ├── outputs/
 │   ├── figures/
 │   │   ├── main/
-│   │   └── supplementary/
-│   └── tables/
-│       ├── main/
-│       └── supplementary/
+│   │   ├── supplementary/
+│   │   └── diagnostics/
+│   ├── tables/
+│   │   ├── main/
+│   │   ├── supplementary/
+│   │   └── diagnostics/
+│   └── export_audit/
 │
-├── datasets/
-│   └── README.md
+├── datasets/                       # Local-only input datasets
+├── playground_notebooks/           # Local-only historical notebooks
+├── output_backups/                 # Local-only output backups
+│
+├── manuscript/
+│   └── Principe_et_al___Preprint_submitted_to_GIScience_and_Remote_Sensing__Revision_/
 │
 ├── src/
 ├── environment.yml
@@ -196,89 +138,20 @@ Raw satellite, settlement, and electricity-load datasets are not redistributed. 
 ```
 
 ---
-=======
-├── notebooks/          # Reproducible analysis notebooks
-├── gee/                # Google Earth Engine export scripts
-├── colab/              # Python/Colab data-preparation scripts
-├── outputs/            # Exported figures and tables
-├── docs/               # GitHub Pages showcase and documentation
-├── datasets/           # Local-only data folder; raw data are not committed
-├── environment.yml     # Conda environment
-├── requirements.txt    # pip requirements
-├── LICENSE
-└── README.md
-```
-
-## Key concepts
-
-| Term                          | Meaning                                                                                                 |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------- |
-| **DNB-BRDF**                  | Directly observed NASA Black Marble nighttime radiance corrected for viewing and illumination effects.  |
-| **Gap-Filled radiance**       | Companion layer that can provide temporal continuity but may not represent a fresh observation.         |
-| **Spatial completeness**      | Percentage of valid observed pixels on a given day.                                                     |
-| **Temporal completeness**     | Percentage of days retained after applying a spatial completeness threshold.                            |
-| **Dropout duration**          | Longest consecutive period without usable direct observations.                                          |
-| **Reliability qualification** | Screening nighttime lights for observability before interpreting them as disaster or recovery evidence. |
-
-## Data availability
->>>>>>> 4594814378d1936e079f6e3522f638ffcec9f438
 
 ## Notebook guide
 
-<<<<<<< HEAD
+The current workflow is in `notebooks/`. Run Notebooks 10–14 in numerical order, then Notebook 15 for sensitivity analyses and Notebook 99 to audit and package exports. Historical notebooks remain local in `playground_notebooks/`.
+
 | Notebook | Purpose | Main contribution |
 |---|---|---|
-| `00_vnp46a2_visual_diagnostics.ipynb` | Inspects daily VNP46A2 observations, quality flags, gap-filled layers, and spatial completeness | Shows why direct observations and gap-filled values must be interpreted separately |
-| `01_poi_observability_diagnostics.ipynb` | Tests 1×1, 3×3, and 5×5 pixel supports across urban, municipal, and non-settlement POIs | Quantifies pixel-scale stability, dropout, and spatial-support effects |
-| `02_settlement_observability_diagnostics.ipynb` | Aggregates DNB-BRDF observations by GHSL-SMOD settlement classes | Shows how observability varies across settlement hierarchy |
-| `03_reliability_qualified_ntl_load_alignment.ipynb` | Aligns reliability-qualified NTL with Samar–Leyte NGCP 1 AM electricity load | Identifies threshold and settlement-mask conditions for strongest NTL–load coupling |
-| `04_cross_subgrid_transferability.ipynb` | Tests whether reliability conditions transfer across Visayas subgrids | Shows that urban masks transfer well, while optimal spatial-completeness thresholds vary |
-=======
-The workflow uses:
-
-| Dataset                   | Role                                                               |
-| ------------------------- | ------------------------------------------------------------------ |
-| NASA Black Marble VNP46A2 | Daily nighttime radiance, Gap-Filled radiance, and quality layers. |
-| GHSL-SMOD                 | Settlement classes and thematic aggregation masks.                 |
-| NGCP electricity load     | Independent electricity-load reference for alignment testing.      |
-| VIIRS-aligned POI patches | Local pixel-scale diagnostics.                                     |
-
-Users reproducing the workflow should place local input files inside `datasets/` following the structure described in:
-
-```text
-datasets/README.md
-```
-
-## Reproducibility
-
-Create the environment using Conda:
-
-```bash
-conda env create -f environment.yml
-conda activate blackmarble-reliability
-```
-
-Or using pip:
-
-```bash
-python -m venv --copies .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
-
-Install the Jupyter kernel:
-
-```bash
-python -m ipykernel install --user --name blackmarble-reliability --display-name "Python (blackmarble-reliability)"
-```
-
-Launch Jupyter:
-
-```bash
-jupyter lab
-```
->>>>>>> 4594814378d1936e079f6e3522f638ffcec9f438
+| `10_vnp46a2_visual_diagnostics.ipynb` | Inspects daily VNP46A2 observations, quality flags, gap-filled layers, and spatial completeness | Shows why direct observations and gap-filled values must be interpreted separately |
+| `11_poi_observability_diagnostics.ipynb` | Tests 1×1, 3×3, and 5×5 pixel supports across urban, municipal, and non-settlement POIs | Quantifies pixel-scale stability, dropout, and spatial-support effects |
+| `12_settlement_observability_diagnostics.ipynb` | Aggregates DNB-BRDF observations by GHSL-SMOD settlement classes | Shows how observability varies across settlement hierarchy |
+| `13_reliability_qualified_ntl_load_alignment.ipynb` | Aligns reliability-qualified NTL with Samar–Leyte NGCP 1 AM electricity load | Identifies threshold and settlement-mask conditions for strongest NTL–load coupling |
+| `14_cross_subgrid_transferability.ipynb` | Tests whether reliability conditions transfer across Visayas subgrids | Shows that urban masks transfer well, while optimal spatial-completeness thresholds vary |
+| `15_editorial_revision_sensitivity.ipynb` | Examines sensitivity analyses supporting the manuscript | Tests how analytical choices affect the interpretation; additional historical diagnostics are optional |
+| `99_figure_and_table_export_audit.ipynb` | Inventories figures and tables, checks export formats, and packages files | Checks the export collection and creates a ZIP containing JPEG figures and tables |
 
 Further details are available in:
 
@@ -290,7 +163,7 @@ docs/reproducibility.md
 
 ## Data inputs
 
-Raw and intermediate datasets are **not committed** to this repository. The analysis expects local data under `datasets/`.
+Raw and intermediate datasets are **not committed** to this repository. The analysis expects local data under the repository-level `datasets/` folder, alongside `notebooks/` and `outputs/`. A fresh clone requires these inputs to be prepared locally. Notebook paths are resolved relative to the repository root rather than a personal directory.
 
 | Dataset | Use | Repository status |
 |---|---|---|
@@ -314,41 +187,36 @@ datasets/
 └── ngcp/
 ```
 
-See `datasets/README.md` for expected local data placement.
+Check each notebook’s input-configuration cells for required filenames and columns. The `datasets/`, `playground_notebooks/`, and `output_backups/` directories remain local. Within `manuscript/`, the current source project is `Principe_et_al___Preprint_submitted_to_GIScience_and_Remote_Sensing__Revision_/`; other local manuscript files are excluded from version control.
 
 ---
 
 ## Outputs
 
-Notebook outputs are written to:
+All notebooks write figures and tables to the same repository-level output folders:
 
 ```text
 outputs/figures/main/
-<<<<<<< HEAD
-outputs/tables/main/
-```
-
-Supplementary and diagnostic outputs are exported to:
-
-```text
-=======
->>>>>>> 4594814378d1936e079f6e3522f638ffcec9f438
 outputs/figures/supplementary/
+outputs/figures/diagnostics/
 outputs/tables/main/
 outputs/tables/supplementary/
+outputs/tables/diagnostics/
+outputs/export_audit/
 ```
 
-<<<<<<< HEAD
+These folders contain the current manuscript, supplementary, and diagnostic exports. Static figures use a common filename stem across HTML, SVG, PNG, and JPEG. JPEG files are generated from the PNG rendering to preserve the plotted content and dimensions; interactive-only dashboards use HTML.
+
+Notebook 99 inventories the exports and checks missing formats. Its packaging cell collects JPEG figures (`.jpeg` and `.jpg`) and all table files into `outputs/figures_and_tables.zip`, preserving their relative folders. This figure-and-table archive does not include the LaTeX manuscript, bibliography, or style files required for an editable submission.
+
+Notebook 99 also includes optional reset and archive operations. Review their settings before running those cells.
+
 Interactive stakeholder-facing HTML outputs are copied to:
-=======
-Selected interactive HTML figures are copied to:
->>>>>>> 4594814378d1936e079f6e3522f638ffcec9f438
 
 ```text
 docs/figures/
 ```
 
-<<<<<<< HEAD
 The file naming convention is:
 
 | Prefix | Meaning |
@@ -382,6 +250,8 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python -m ipykernel install --user --name blackmarble-reliability --display-name "Python (blackmarble-reliability)"
 ```
+
+Static Plotly exports require Kaleido and a compatible browser runtime.
 
 Then launch:
 
@@ -449,27 +319,16 @@ This workflow does not treat nighttime lights as a standalone measure of recover
 The outputs should therefore be interpreted alongside electricity-load data, outage reports, damage assessments, field information, and local knowledge.
 
 ---
-=======
-for the GitHub Pages showcase.
-
-## Main finding
-
-Daily nighttime lights can support disaster recovery monitoring, but only under reliability-qualified conditions.
-
-In practice:
-
-* direct observations should be prioritized over apparent gap-filled continuity,
-* valid-pixel coverage must be checked before interpretation,
-* urban-focused settlement masks often provide stronger alignment with electricity-load dynamics,
-* optimal spatial-completeness thresholds vary by region,
-* and transferability is conditional rather than one-size-fits-all.
 
 ## Citation
 
 If you use this repository, please cite:
 
 > Principe, R. L. Jr., Reinke, K., & Jones, S. (2026). *Black Marble Reliability Conditions: Reproducible Workflow for Reliability-Qualified Daily Nighttime Lights*. Zenodo. https://doi.org/10.5281/zenodo.21051901
->>>>>>> 4594814378d1936e079f6e3522f638ffcec9f438
+
+Repository citation metadata are also provided in `CITATION.cff`.
+
+---
 
 ## License
 
@@ -477,7 +336,6 @@ Code in this repository is released under the MIT License unless otherwise state
 
 Data remain subject to the terms and conditions of their original providers.
 
-<<<<<<< HEAD
 ---
 
 ## Contact
@@ -485,15 +343,3 @@ Data remain subject to the terms and conditions of their original providers.
 **Rene L. Principe Jr.**  
 PhD Candidate, Geospatial Sciences  
 RMIT University
-
-=======
-## Contact
-
-**Rene Jr. L. Principe**
-
-PhD Candidate, Geospatial Sciences
-
-RMIT University
-
-s4135723@student.rmit.edu.au
->>>>>>> 4594814378d1936e079f6e3522f638ffcec9f438
