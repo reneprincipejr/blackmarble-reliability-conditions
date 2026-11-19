@@ -39,3 +39,17 @@ scratch/
 !/manuscript/Principe_et_al___Preprint_submitted_to_GIScience_and_Remote_Sensing__Revision_/
 
 !/manuscript/Principe_et_al___Preprint_submitted_to_GIScience_and_Remote_Sensing__Revision_/**
+
+/datasets/
+
+/playground_notebooks/
+
+/output_backups/
+
+!/manuscript/
+
+/manuscript/*
+
+!/manuscript/Principe_et_al___Preprint_submitted_to_GIScience_and_Remote_Sensing__Revision_/
+
+!/manuscript/Principe_et_al___Preprint_submitted_to_GIScience_and_Remote_Sensing__Revision_/**
