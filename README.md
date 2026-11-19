@@ -38,7 +38,7 @@ The showcase is designed for disaster agencies, electricity-sector stakeholders,
 
 ## Research workflow at a glance
 
-![Research schematic showing data inputs, observability gate, and load-alignment gate](docs/assets/figure_2_schematic.png)
+![Research schematic showing data inputs, observability gate, and load-alignment gate](<img width="2880" height="3049" alt="fig_02_schematic_diagram" src="https://github.com/user-attachments/assets/6e6fb47f-9c30-4c86-a379-cf5a5c566587" />)
 
 The workflow has three gates:
 
@@ -46,7 +46,7 @@ The workflow has three gates:
 2. **Observability gate** — pixel-scale and settlement-scale diagnostics that test whether enough valid nighttime light observations exist.
 3. **Load-alignment gate** — reliability-qualified NTL signals are compared with electricity-load dynamics across thresholds, settlement masks, and subgrids.
 
-![RQ1 workflow summary](docs/assets/rq1_workflow.jpeg)
+<img width="1404" height="608" alt="rq1_workdlow" src="https://github.com/user-attachments/assets/ba1d0976-debb-45be-87c5-13d8ebfee3ac" />
 
 ---
 
