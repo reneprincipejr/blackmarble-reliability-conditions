@@ -1,0 +1,121 @@
+paper_id,description,notebook,mapping,path,status
+Figure 1,Study region and analysis units,,Source generator unavailable,,No mapped generator
+Figure 2,Reliability-qualification workflow diagram,,Source generator unavailable,,No mapped generator
+Figure 3a,"VNP46A2 panel, 1 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131101.html,Candidate; verify against final paper
+Figure 3a,"VNP46A2 panel, 1 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131101.jpeg,Candidate; verify against final paper
+Figure 3a,"VNP46A2 panel, 1 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131101.png,Candidate; verify against final paper
+Figure 3a,"VNP46A2 panel, 1 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131101.svg,Candidate; verify against final paper
+Figure 3b,"VNP46A2 panel, 5 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131105.html,Candidate; verify against final paper
+Figure 3b,"VNP46A2 panel, 5 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131105.jpeg,Candidate; verify against final paper
+Figure 3b,"VNP46A2 panel, 5 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131105.png,Candidate; verify against final paper
+Figure 3b,"VNP46A2 panel, 5 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131105.svg,Candidate; verify against final paper
+Figure 3c,"VNP46A2 panel, 10 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131110.html,Candidate; verify against final paper
+Figure 3c,"VNP46A2 panel, 10 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131110.jpeg,Candidate; verify against final paper
+Figure 3c,"VNP46A2 panel, 10 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131110.png,Candidate; verify against final paper
+Figure 3c,"VNP46A2 panel, 10 Nov 2013",10,Revised candidate,outputs/figures/main/fig_03_20131110.svg,Candidate; verify against final paper
+Figure 3d,"VNP46A2 panel, 13 Nov 2013",10,Confirm in revised layout,outputs/figures/main/fig_03_20131113.html,Candidate; verify against final paper
+Figure 3d,"VNP46A2 panel, 13 Nov 2013",10,Confirm in revised layout,outputs/figures/main/fig_03_20131113.jpeg,Candidate; verify against final paper
+Figure 3d,"VNP46A2 panel, 13 Nov 2013",10,Confirm in revised layout,outputs/figures/main/fig_03_20131113.png,Candidate; verify against final paper
+Figure 3d,"VNP46A2 panel, 13 Nov 2013",10,Confirm in revised layout,outputs/figures/main/fig_03_20131113.svg,Candidate; verify against final paper
+Figure 4,POI temporal and spatial CV,11,Revised source,outputs/figures/main/fig_04_poi_cv_by_kernel_and_settlement_2013.html,Candidate; verify against final paper
+Figure 4,POI temporal and spatial CV,11,Revised source,outputs/figures/main/fig_04_poi_cv_by_kernel_and_settlement_2013.jpeg,Candidate; verify against final paper
+Figure 4,POI temporal and spatial CV,11,Revised source,outputs/figures/main/fig_04_poi_cv_by_kernel_and_settlement_2013.png,Candidate; verify against final paper
+Figure 4,POI temporal and spatial CV,11,Revised source,outputs/figures/main/fig_04_poi_cv_by_kernel_and_settlement_2013.svg,Candidate; verify against final paper
+Figure 5,Global temporal completeness,,Source generator unavailable,,No mapped generator
+Figure 6a,Native-daily Pearson r,13,Revised source,outputs/figures/main/fig_06a_native_daily_r.html,Candidate; verify against final paper
+Figure 6a,Native-daily Pearson r,13,Revised source,outputs/figures/main/fig_06a_native_daily_r.jpeg,Candidate; verify against final paper
+Figure 6a,Native-daily Pearson r,13,Revised source,outputs/figures/main/fig_06a_native_daily_r.png,Candidate; verify against final paper
+Figure 6a,Native-daily Pearson r,13,Revised source,outputs/figures/main/fig_06a_native_daily_r.svg,Candidate; verify against final paper
+Figure 6b,Native-daily retained N%,13,Revised source,outputs/figures/main/fig_06b_native_daily_N.html,Candidate; verify against final paper
+Figure 6b,Native-daily retained N%,13,Revised source,outputs/figures/main/fig_06b_native_daily_N.jpeg,Candidate; verify against final paper
+Figure 6b,Native-daily retained N%,13,Revised source,outputs/figures/main/fig_06b_native_daily_N.png,Candidate; verify against final paper
+Figure 6b,Native-daily retained N%,13,Revised source,outputs/figures/main/fig_06b_native_daily_N.svg,Candidate; verify against final paper
+Figure 6c,Native-daily composite score,13,Revised source,outputs/figures/main/fig_06c_native_daily_score.html,Candidate; verify against final paper
+Figure 6c,Native-daily composite score,13,Revised source,outputs/figures/main/fig_06c_native_daily_score.jpeg,Candidate; verify against final paper
+Figure 6c,Native-daily composite score,13,Revised source,outputs/figures/main/fig_06c_native_daily_score.png,Candidate; verify against final paper
+Figure 6c,Native-daily composite score,13,Revised source,outputs/figures/main/fig_06c_native_daily_score.svg,Candidate; verify against final paper
+Figure 7,Samar–Leyte NTL–load alignment and Haiyan zoom,13,Revised source,outputs/figures/main/fig_07_samar_leyte.html,Candidate; verify against final paper
+Figure 7,Samar–Leyte NTL–load alignment and Haiyan zoom,13,Revised source,outputs/figures/main/fig_07_samar_leyte.jpeg,Candidate; verify against final paper
+Figure 7,Samar–Leyte NTL–load alignment and Haiyan zoom,13,Revised source,outputs/figures/main/fig_07_samar_leyte.png,Candidate; verify against final paper
+Figure 7,Samar–Leyte NTL–load alignment and Haiyan zoom,13,Revised source,outputs/figures/main/fig_07_samar_leyte.svg,Candidate; verify against final paper
+Figure 8,Regional NTL–load alignment and Rai zoom,14,Revised source,outputs/figures/main/fig_08_selected_regions_rai.html,Candidate; verify against final paper
+Figure 8,Regional NTL–load alignment and Rai zoom,14,Revised source,outputs/figures/main/fig_08_selected_regions_rai.jpeg,Candidate; verify against final paper
+Figure 8,Regional NTL–load alignment and Rai zoom,14,Revised source,outputs/figures/main/fig_08_selected_regions_rai.png,Candidate; verify against final paper
+Figure 8,Regional NTL–load alignment and Rai zoom,14,Revised source,outputs/figures/main/fig_08_selected_regions_rai.svg,Candidate; verify against final paper
+Regional component trade-off,Daily alignment versus coverage by sub-grid,14,Confirm final ID,outputs/figures/main/fig_native_daily_alignment_coverage.html,Candidate; verify against final paper
+Regional component trade-off,Daily alignment versus coverage by sub-grid,14,Confirm final ID,outputs/figures/main/fig_native_daily_alignment_coverage.jpeg,Candidate; verify against final paper
+Regional component trade-off,Daily alignment versus coverage by sub-grid,14,Confirm final ID,outputs/figures/main/fig_native_daily_alignment_coverage.png,Candidate; verify against final paper
+Regional component trade-off,Daily alignment versus coverage by sub-grid,14,Confirm final ID,outputs/figures/main/fig_native_daily_alignment_coverage.svg,Candidate; verify against final paper
+Figure 10,Window sensitivity at fixed native-daily configurations,15,Source figure label,outputs/figures/main/fig_10_fixed_configuration_window_sensitivity.html,Candidate; verify against final paper
+Figure 10,Window sensitivity at fixed native-daily configurations,15,Source figure label,outputs/figures/main/fig_10_fixed_configuration_window_sensitivity.jpeg,Candidate; verify against final paper
+Figure 10,Window sensitivity at fixed native-daily configurations,15,Source figure label,outputs/figures/main/fig_10_fixed_configuration_window_sensitivity.png,Candidate; verify against final paper
+Figure 10,Window sensitivity at fixed native-daily configurations,15,Source figure label,outputs/figures/main/fig_10_fixed_configuration_window_sensitivity.svg,Candidate; verify against final paper
+Figure 10,Window sensitivity at fixed native-daily configurations,15,Source figure label,outputs/tables/supplementary/fig_10_fixed_configuration_window_sensitivity.csv,Candidate; verify against final paper
+Table 1,GHSL classes and analysis groups,12,Revised source,outputs/tables/main/table_01_ghsl_smod_classes_and_analysis_groups.csv,Candidate; verify against final paper
+Table 2,POI kernel observability,11,Revised source,outputs/tables/main/table_02_poi_kernel_observability_2013.csv,Candidate; verify against final paper
+Table 3,Settlement-scale observability,12,Revised source,outputs/tables/main/table_03_settlement_observability_diagnostics_2013.csv,Candidate; verify against final paper
+Regional ranking table,Top-five native-daily configurations per sub-grid,14,Confirm Table 4/Supplement placement,outputs/tables/main/section2_top5_daily_configurations_by_subgrid_5pct_tau.csv,Candidate; verify against final paper
+Figure S1,Regional radiance and spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s1_regional_dnb_gapfilled_completeness_2013.html,Candidate; verify against final paper
+Figure S1,Regional radiance and spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s1_regional_dnb_gapfilled_completeness_2013.jpeg,Candidate; verify against final paper
+Figure S1,Regional radiance and spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s1_regional_dnb_gapfilled_completeness_2013.png,Candidate; verify against final paper
+Figure S1,Regional radiance and spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s1_regional_dnb_gapfilled_completeness_2013.svg,Candidate; verify against final paper
+Figure S2,Tacloban 1×1 observability,11,Related export spans all three supports,outputs/figures/supplementary/fig_sx_tacloban_dnb_gapfilled_by_kernel_2013.html,Candidate; verify against final paper
+Figure S2,Tacloban 1×1 observability,11,Related export spans all three supports,outputs/figures/supplementary/fig_sx_tacloban_dnb_gapfilled_by_kernel_2013.jpeg,Candidate; verify against final paper
+Figure S2,Tacloban 1×1 observability,11,Related export spans all three supports,outputs/figures/supplementary/fig_sx_tacloban_dnb_gapfilled_by_kernel_2013.png,Candidate; verify against final paper
+Figure S2,Tacloban 1×1 observability,11,Related export spans all three supports,outputs/figures/supplementary/fig_sx_tacloban_dnb_gapfilled_by_kernel_2013.svg,Candidate; verify against final paper
+Figure S3,Regional long-term spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s3_spatial_completeness_2012_2024.html,Candidate; verify against final paper
+Figure S3,Regional long-term spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s3_spatial_completeness_2012_2024.jpeg,Candidate; verify against final paper
+Figure S3,Regional long-term spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s3_spatial_completeness_2012_2024.png,Candidate; verify against final paper
+Figure S3,Regional long-term spatial completeness,10,Original ID,outputs/figures/supplementary/fig_s3_spatial_completeness_2012_2024.svg,Candidate; verify against final paper
+Figure S4,Pre–post Haiyan radiance differences,11,Original ID,outputs/figures/supplementary/fig_s4_prepost_haiyan_delta_ntl_by_kernel_2013.html,Candidate; verify against final paper
+Figure S4,Pre–post Haiyan radiance differences,11,Original ID,outputs/figures/supplementary/fig_s4_prepost_haiyan_delta_ntl_by_kernel_2013.jpeg,Candidate; verify against final paper
+Figure S4,Pre–post Haiyan radiance differences,11,Original ID,outputs/figures/supplementary/fig_s4_prepost_haiyan_delta_ntl_by_kernel_2013.png,Candidate; verify against final paper
+Figure S4,Pre–post Haiyan radiance differences,11,Original ID,outputs/figures/supplementary/fig_s4_prepost_haiyan_delta_ntl_by_kernel_2013.svg,Candidate; verify against final paper
+Figure S5,POI direct and Gap-Filled time series,11,Original ID,outputs/figures/supplementary/fig_s5_representative_poi_dnb_gapfilled_by_kernel_2013.html,Candidate; verify against final paper
+Figure S5,POI direct and Gap-Filled time series,11,Original ID,outputs/figures/supplementary/fig_s5_representative_poi_dnb_gapfilled_by_kernel_2013.jpeg,Candidate; verify against final paper
+Figure S5,POI direct and Gap-Filled time series,11,Original ID,outputs/figures/supplementary/fig_s5_representative_poi_dnb_gapfilled_by_kernel_2013.png,Candidate; verify against final paper
+Figure S5,POI direct and Gap-Filled time series,11,Original ID,outputs/figures/supplementary/fig_s5_representative_poi_dnb_gapfilled_by_kernel_2013.svg,Candidate; verify against final paper
+Figure S6,Representative thematic mask maps,,Source generator unavailable,,No mapped generator
+Figure S7,NTL series across SC thresholds,13,Related interactive export,outputs/figures/supplementary/fig_sx_interactive_ntl_reliability_filter_samar_leyte.html,Candidate; verify against final paper
+Figure S7,NTL series across SC thresholds,13,Related interactive export,outputs/figures/supplementary/fig_sx_interactive_ntl_reliability_filter_samar_leyte.jpeg,Candidate; verify against final paper
+Figure S7,NTL series across SC thresholds,13,Related interactive export,outputs/figures/supplementary/fig_sx_interactive_ntl_reliability_filter_samar_leyte.png,Candidate; verify against final paper
+Figure S7,NTL series across SC thresholds,13,Related interactive export,outputs/figures/supplementary/fig_sx_interactive_ntl_reliability_filter_samar_leyte.svg,Candidate; verify against final paper
+Figure S8a,Raw NTL–NGCP alignment at τ = 10%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8a_raw_ntl_ngcp_tau10.html,Candidate; verify against final paper
+Figure S8a,Raw NTL–NGCP alignment at τ = 10%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8a_raw_ntl_ngcp_tau10.jpeg,Candidate; verify against final paper
+Figure S8a,Raw NTL–NGCP alignment at τ = 10%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8a_raw_ntl_ngcp_tau10.png,Candidate; verify against final paper
+Figure S8a,Raw NTL–NGCP alignment at τ = 10%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8a_raw_ntl_ngcp_tau10.svg,Candidate; verify against final paper
+Figure S8b,Raw NTL–NGCP alignment at τ = 50%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8b_raw_ntl_ngcp_tau50.html,Candidate; verify against final paper
+Figure S8b,Raw NTL–NGCP alignment at τ = 50%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8b_raw_ntl_ngcp_tau50.jpeg,Candidate; verify against final paper
+Figure S8b,Raw NTL–NGCP alignment at τ = 50%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8b_raw_ntl_ngcp_tau50.png,Candidate; verify against final paper
+Figure S8b,Raw NTL–NGCP alignment at τ = 50%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8b_raw_ntl_ngcp_tau50.svg,Candidate; verify against final paper
+Figure S8c,Raw NTL–NGCP alignment at τ = 90%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8c_raw_ntl_ngcp_tau90.html,Candidate; verify against final paper
+Figure S8c,Raw NTL–NGCP alignment at τ = 90%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8c_raw_ntl_ngcp_tau90.jpeg,Candidate; verify against final paper
+Figure S8c,Raw NTL–NGCP alignment at τ = 90%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8c_raw_ntl_ngcp_tau90.png,Candidate; verify against final paper
+Figure S8c,Raw NTL–NGCP alignment at τ = 90%,13,Original runnable workflow,outputs/figures/supplementary/fig_s8c_raw_ntl_ngcp_tau90.svg,Candidate; verify against final paper
+Table S2,Full POI observability,11,Revised source,outputs/tables/supplementary/table_s2_full_poi_observability_metrics_2013.csv,Candidate; verify against final paper
+Table S3,Full settlement observability,12,Revised source,outputs/tables/supplementary/settlement_observability/table_s3_full_settlement_observability_metrics_2013.csv,Candidate; verify against final paper
+Regional heatmaps,Regional native-daily component and score surfaces,14,Confirm final ID,outputs/figures/supplementary/fig_08_regional_daily_heatmaps.html,Candidate; verify against final paper
+Regional heatmaps,Regional native-daily component and score surfaces,14,Confirm final ID,outputs/figures/supplementary/fig_08_regional_daily_heatmaps.jpeg,Candidate; verify against final paper
+Regional heatmaps,Regional native-daily component and score surfaces,14,Confirm final ID,outputs/figures/supplementary/fig_08_regional_daily_heatmaps.png,Candidate; verify against final paper
+Regional heatmaps,Regional native-daily component and score surfaces,14,Confirm final ID,outputs/figures/supplementary/fig_08_regional_daily_heatmaps.svg,Candidate; verify against final paper
+Temporal checkpoints,Mask–threshold checkpoint surfaces for r,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_r.html,Candidate; verify against final paper
+Temporal checkpoints,Mask–threshold checkpoint surfaces for r,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_r.jpeg,Candidate; verify against final paper
+Temporal checkpoints,Mask–threshold checkpoint surfaces for r,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_r.png,Candidate; verify against final paper
+Temporal checkpoints,Mask–threshold checkpoint surfaces for r,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_r.svg,Candidate; verify against final paper
+Temporal coverage checkpoints,Mask–threshold checkpoint surfaces for N%,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_N_pct.html,Candidate; verify against final paper
+Temporal coverage checkpoints,Mask–threshold checkpoint surfaces for N%,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_N_pct.jpeg,Candidate; verify against final paper
+Temporal coverage checkpoints,Mask–threshold checkpoint surfaces for N%,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_N_pct.png,Candidate; verify against final paper
+Temporal coverage checkpoints,Mask–threshold checkpoint surfaces for N%,15,Confirm final ID,outputs/figures/supplementary/section1_checkpoint_heatmaps_N_pct.svg,Candidate; verify against final paper
+Event window comparison,"Haiyan/Rai window sensitivity, main layout",15,Confirm final ID,outputs/figures/main/section1_event_alignment_main_W1_W4_W30.html,Candidate; verify against final paper
+Event window comparison,"Haiyan/Rai window sensitivity, main layout",15,Confirm final ID,outputs/figures/main/section1_event_alignment_main_W1_W4_W30.jpeg,Candidate; verify against final paper
+Event window comparison,"Haiyan/Rai window sensitivity, main layout",15,Confirm final ID,outputs/figures/main/section1_event_alignment_main_W1_W4_W30.png,Candidate; verify against final paper
+Event window comparison,"Haiyan/Rai window sensitivity, main layout",15,Confirm final ID,outputs/figures/main/section1_event_alignment_main_W1_W4_W30.svg,Candidate; verify against final paper
+"Event window comparison, expanded","Haiyan/Rai window sensitivity, supplementary layout",15,Confirm final ID,outputs/figures/supplementary/section1_event_alignment_supp_W1_W4_W7_W14_W30.html,Candidate; verify against final paper
+"Event window comparison, expanded","Haiyan/Rai window sensitivity, supplementary layout",15,Confirm final ID,outputs/figures/supplementary/section1_event_alignment_supp_W1_W4_W7_W14_W30.jpeg,Candidate; verify against final paper
+"Event window comparison, expanded","Haiyan/Rai window sensitivity, supplementary layout",15,Confirm final ID,outputs/figures/supplementary/section1_event_alignment_supp_W1_W4_W7_W14_W30.png,Candidate; verify against final paper
+"Event window comparison, expanded","Haiyan/Rai window sensitivity, supplementary layout",15,Confirm final ID,outputs/figures/supplementary/section1_event_alignment_supp_W1_W4_W7_W14_W30.svg,Candidate; verify against final paper
+Score robustness,Regional comparison of score formulations,15,Confirm final ID,outputs/figures/supplementary/section2_composite_score_Nr_vs_Nr2.html,Candidate; verify against final paper
+Score robustness,Regional comparison of score formulations,15,Confirm final ID,outputs/figures/supplementary/section2_composite_score_Nr_vs_Nr2.jpeg,Candidate; verify against final paper
+Score robustness,Regional comparison of score formulations,15,Confirm final ID,outputs/figures/supplementary/section2_composite_score_Nr_vs_Nr2.png,Candidate; verify against final paper
+Score robustness,Regional comparison of score formulations,15,Confirm final ID,outputs/figures/supplementary/section2_composite_score_Nr_vs_Nr2.svg,Candidate; verify against final paper
+Score robustness table,Selected regional settings under each formula,15,Confirm final ID,outputs/tables/supplementary/section2_composite_score_Nr_vs_Nr2_selections.csv,Candidate; verify against final paper

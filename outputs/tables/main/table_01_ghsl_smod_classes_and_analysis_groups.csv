@@ -1,0 +1,9 @@
+Code,Official Class,Analysis Group
+10,Water,Water Bodies
+11,Very Low Density Rural,Rural Grid Cells
+12,Low Density Rural,Rural Grid Cells
+13,Rural Cluster,Rural Grid Cells
+21,Suburban / Peri-urban,Urban Cluster
+22,Semi-dense Urban Cluster,Urban Cluster
+23,Dense Urban Cluster,Urban Cluster
+30,Urban Centre,Urban Centre

@@ -1,0 +1,5 @@
+Settlement Group,Pixel Share (%),Spatial Completeness (%),Temporal Completeness ≥25% (%),Temporal Completeness ≥50% (%),Temporal Completeness ≥75% (%),Max Dropout Days,Temporal CV,Spatial CV
+Urban Centre,0.47,37.3,43.8,34.8,25.8,22,0.71,1.39
+Urban Cluster,11.78,45.8,49.5,39.2,30.4,22,0.66,1.44
+Rural Grid Cells,86.7,32.0,47.9,33.5,15.5,23,0.68,1.25
+Water Bodies,1.05,54.0,52.9,41.9,30.1,20,1.47,1.14

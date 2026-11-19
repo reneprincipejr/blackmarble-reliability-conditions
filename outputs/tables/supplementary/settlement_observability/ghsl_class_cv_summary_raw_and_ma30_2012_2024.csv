@@ -1,0 +1,9 @@
+Group,ClassCode,ClassLabel,Median_CV_raw,Median_CV_MA30
+Water Bodies,10,Water (10),0.799,0.26
+Rural Grid Cells,11,Very Low Density Rural (11),0.73,0.219
+Rural Grid Cells,12,Low Density Rural (12),0.65,0.207
+Rural Grid Cells,13,Rural Cluster (13),0.664,0.24
+Urban Cluster,21,Suburban / Peri-urban (21),0.576,0.175
+Urban Cluster,22,Semi-dense Urban Cluster (22),0.577,0.167
+Urban Cluster,23,Dense Urban Cluster (23),0.483,0.124
+Urban Centre,30,Urban Centre (30),0.452,0.154
