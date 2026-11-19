@@ -38,7 +38,7 @@ The showcase is designed for disaster agencies, electricity-sector stakeholders,
 
 ## Research workflow at a glance
 
-![figure_2_schematic](https://github.com/user-attachments/assets/334436c7-0424-4f84-b681-3c7afeb1af4c)
+<img width="2880" height="3049" alt="fig_02_schematic_diagram" src="https://github.com/user-attachments/assets/a2e944bf-240e-4783-9371-96da5eac5d4e" />
 
 The workflow has three gates:
 
